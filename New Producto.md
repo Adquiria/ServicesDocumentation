@@ -132,6 +132,10 @@ El bearer token se obtiene como respuesta a tu solicitud de inicio de sesión a 
 - **categoriasAsociadas** (lista de enteros): Identificadores de las categorías asociadas. Se debe tener en cuenta que para o relacionar las categorias, estas se debe crear previamente para poder obtener los Identificadores y relacionarlos correctamente. para poder crear estas catagorias de usar la Api [[New Categoria Productos]]], para listar las categorias creades y obtener sus respectivos identificadores usamos la api [[Get List Categorias]]
 - **caracteristicasAsociadas** (lista de enteros): Identificadores de las características asociadas. al igual que las categorias, debemos crearlas previamente y posteriormente listarlas para obtener sus respectivos identificadores.
 
+## Diagrama de datos JSON
+![Untitled-2024-12-11-23-07-10](https://github.com/user-attachments/assets/665e55c2-698e-49cb-94e7-649d53977576)
+
+
 ## Response
 Si el `request` es correcto debe retornar:
 
