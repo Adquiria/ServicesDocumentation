@@ -193,3 +193,6 @@ y la estructura del siguiente JSON:
   "userNameInfo": "string"
 }
 ```
+## Diagra del objeto JSON
+A continuacion, para mayor comprensión se grafica el anterior objeto JSON y sus niveles de anidamiento
+![Untitled-2024-12-11-21-37-52](https://github.com/user-attachments/assets/0eb954b3-16a8-4f1b-b2fe-3d7dfbca9072)
