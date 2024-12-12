@@ -49,7 +49,7 @@ El bearer token se obtiene como respuesta a tu solicitud de inicio de sesión a 
 - **id** (entero): Identificador único de la categoría. se manda vacío cuando se crea la categoría, el sistemas agrega el id automáticamente
 - **nombre** (cadena): Nombre de la categoría.
 - **estado** (booleano): Estado de la categoría (activo/inactivo).
-- **capo_IdPadre** (entero): Identificador de la categoría padre, si aplica.
+- **capo_IdPadre** (entero): Identificador de la categoría padre, si aplica, si por el contrario quire crear una categoria padre ese campo debe tener el valor = `null`.
 - **esCategoriaPrincipal** (booleano): Indica si la categoría es principal.
 - **enti_Id** (entero): Identificador de la entidad propietaria de la categoría.
 
@@ -59,5 +59,11 @@ Si el `request` es correcto debe retornar:
 ```
 Code: 200
 Descripcion: Success
+```
+```json
+{
+   "success": true,
+   "message": "El arbol de categorías se agrego con éxito"
+}
 ```
 
