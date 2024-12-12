@@ -48,15 +48,15 @@ El bearer token se obtiene como respuesta a tu solicitud de inicio de sesión a 
 
 #### Información del Elemento
 
-- **userCodeCreacion** (entero): Código del usuario que creó el elemento.
-- **userCodeUltimaModificacion** (entero): Código del usuario que realizó la última modificación.
+- **userCodeCreacion** (OBLIGATORIO) (entero): Código del usuario que creó el elemento.
+- **userCodeUltimaModificacion** (OBLIGATORIO) (entero): Código del usuario que realizó la última modificación.
 - **id** (entero): Identificador único del elemento.
-- **nombre** (cadena): Nombre del elemento.
+- **nombre** OBLIGATORIO (cadena): Nombre del elemento.
 - **imagen** (cadena): URL de la imagen asociada al elemento.
 - **tipoImagen** (cadena): Tipo de imagen (ej. jpeg, png).
 - **type** (cadena): Tipo del elemento.
-- **estado** (booleano): Estado del elemento (activo/inactivo).
-- **enti_Id** (entero): Identificador de la entidad propietaria del elemento.
+- **estado** (OBLIGATORIO) (booleano): Estado del elemento (activo/inactivo).
+- **enti_Id** (OBLIGATORIO) (entero): Identificador de la entidad propietaria del elemento.
 
 ## Response
 Si el `request` es correcto debe retornar:
@@ -66,3 +66,10 @@ Code: 200
 Descripcion: Success
 ```
 
+### Objeto JSON
+```JSON
+{
+   "success": true,
+   "message": "La marca se agrego con éxito"
+}
+```
