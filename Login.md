@@ -54,11 +54,6 @@ Descripcion: Success
 y la estructura del siguiente JSON:
 ```json
 {
-  "monedaMain": "string",
-  "cambioAdquiria": true,
-  "monedaCambioMain": 0,
-  "monedaSecun": "string",
-  "monedaCambioSecun": 0,
   "userCode": 0,
   "userName": "string",
   "userActive": true,
@@ -68,9 +63,9 @@ y la estructura del siguiente JSON:
     "enti_Id": 0,
     "enti_Nombre": "string",
     "enti_ResponsableNombre": "string",
-    "enti_ResponsableEmail": "string",
-    "enti_ResponsableTelefono": "string",
-    "enti_RutaLogo": "string",
+    "enti_ResponsableEmail": "string@email.com",
+    "enti_ResponsableTelefono": "+57 0000000000",
+    "enti_RutaLogo": "https://[...].PNG",
     "enti_Direccion": "string",
     "enti_Rut": "string",
     "enti_RazonSocial": "string",
@@ -78,121 +73,28 @@ y la estructura del siguiente JSON:
     "enti_TipoCambioAdquiria": true,
     "enti_ValorCambio": 0,
     "tiam_Id": 0,
-    "tipoAmbiente": {
-      "fechaCreacion": "2024-12-11T17:45:41.076Z",
-      "fechaUltimaModificacion": "2024-12-11T17:45:41.076Z",
-      "userCodeCreacion": 0,
-      "usuarioCreacion": {
-        "userCode": 0,
-        "userNameService": "string",
-        "userPasswordService": "string",
-        "userActiveService": true,
-        "rose_Id": 0,
-        "rol": {
-          "rose_Id": 0,
-          "rose_Rol": "string",
-          "rose_Estado": true,
-          "fechaCreacion": "2024-12-11T17:45:41.076Z"
-        },
-        "enti_Id": 0,
-        "entidad": "string",
-        "userSaltPasswordService": "string",
-        "userNameOneService": "string",
-        "userLastNameService": "string",
-        "userTelephoneService": "string",
-        "userEmailService": "string",
-        "useService": true,
-        "changePassword": true,
-        "idUserEdit": 0
-      },
-      "userCodeModificacion": 0,
-      "usuarioModificacion": {
-        "userCode": 0,
-        "userNameService": "string",
-        "userPasswordService": "string",
-        "userActiveService": true,
-        "rose_Id": 0,
-        "rol": {
-          "rose_Id": 0,
-          "rose_Rol": "string",
-          "rose_Estado": true,
-          "fechaCreacion": "2024-12-11T17:45:41.076Z"
-        },
-        "enti_Id": 0,
-        "entidad": "string",
-        "userSaltPasswordService": "string",
-        "userNameOneService": "string",
-        "userLastNameService": "string",
-        "userTelephoneService": "string",
-        "userEmailService": "string",
-        "useService": true,
-        "changePassword": true,
-        "idUserEdit": 0
-      },
-      "tiam_Id": 0,
-      "tiam_Tipo": "string",
-      "tiam_Estado": true,
-      "tiam_Descripcion": "string"
-    },
-    "fechaCreacion": "2024-12-11T17:45:41.076Z",
-    "fechaUltimaModificacion": "2024-12-11T17:45:41.076Z",
+    "tipoAmbiente": null,
+    "fechaCreacion": "2024-06-27T02:19:41.985",
+    "fechaUltimaModificacion": "2024-12-11T16:21:47.861719",
     "userCodeCreacion": 0,
-    "usuarioCreacion": {
-      "userCode": 0,
-      "userNameService": "string",
-      "userPasswordService": "string",
-      "userActiveService": true,
-      "rose_Id": 0,
-      "rol": {
-        "rose_Id": 0,
-        "rose_Rol": "string",
-        "rose_Estado": true,
-        "fechaCreacion": "2024-12-11T17:45:41.076Z"
-      },
-      "enti_Id": 0,
-      "entidad": "string",
-      "userSaltPasswordService": "string",
-      "userNameOneService": "string",
-      "userLastNameService": "string",
-      "userTelephoneService": "string",
-      "userEmailService": "string",
-      "useService": true,
-      "changePassword": true,
-      "idUserEdit": 0
-    },
+    "usuarioCreacion": null,
     "userCodeModificacion": 0,
-    "usuarioModificacion": {
-      "userCode": 0,
-      "userNameService": "string",
-      "userPasswordService": "string",
-      "userActiveService": true,
-      "rose_Id": 0,
-      "rol": {
-        "rose_Id": 0,
-        "rose_Rol": "string",
-        "rose_Estado": true,
-        "fechaCreacion": "2024-12-11T17:45:41.076Z"
-      },
-      "enti_Id": 0,
-      "entidad": "string",
-      "userSaltPasswordService": "string",
-      "userNameOneService": "string",
-      "userLastNameService": "string",
-      "userTelephoneService": "string",
-      "userEmailService": "string",
-      "useService": true,
-      "changePassword": true,
-      "idUserEdit": 0
-    }
+    "usuarioModificacion": null
   },
   "userToken": {
-    "token": "string",
-    "expiration": "2024-12-11T17:45:41.076Z"
+    "token": "eyJh[...]0gEU",
+    "expiration": "2024-12-12T04:03:02.8244278Z"
   },
   "changePassword": true,
-  "userNameInfo": "string"
+  "userNameInfo": "string",
+  "monedaMain": "USD",
+  "cambioAdquiria": true,
+  "monedaCambioMain": 0,
+  "monedaSecun": "UYU",
+  "monedaCambioSecun": 44.95
 }
 ```
 ## Diagra del objeto JSON
 A continuacion, para mayor comprensión se grafica el anterior objeto JSON y sus niveles de anidamiento
-![Untitled-2024-12-11-21-37-52](https://github.com/user-attachments/assets/0eb954b3-16a8-4f1b-b2fe-3d7dfbca9072)
+![Login Return JSON-2024-12-12-00-34-03](https://github.com/user-attachments/assets/c1a8a3b3-1051-4c18-9afc-a4f51bb97115)
+
