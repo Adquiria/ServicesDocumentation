@@ -21,6 +21,9 @@ POST
 
 Este servicio API permite gestionar la creación de pedidos.
 
+### Bearer Token
+El bearer token se obtiene como respuesta a tu solicitud de inicio de sesión a través de la API Login. Es necesario especificar ese bearer token obtenido previamente en el encabezado de esta request.
+
 ### Estructura del Objeto JSON
 
 ```json
